@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "WebSearch",
-      "Bash(gh auth:*)",
-      "Bash(git --version)"
-    ]
-  }
-}
