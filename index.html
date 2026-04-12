@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CincySites — Web Design for Local Businesses</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a href="#top" class="logo">
+        <span class="logo-mark">CS</span>
+        <span class="logo-text">CincySites</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="btn btn-primary btn-sm">Get Connected</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-deco" aria-hidden="true">
+      <div class="hero-deco-ring hero-deco-ring--a"></div>
+      <div class="hero-deco-ring hero-deco-ring--b"></div>
+      <div class="hero-deco-ring hero-deco-ring--c"></div>
+      <div class="hero-deco-ring hero-deco-ring--d"></div>
+      <div class="hero-deco-ring hero-deco-ring--e"></div>
+      <div class="hero-deco-ring hero-deco-ring--f"></div>
+      <div class="hero-deco-dots"></div>
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-content">
+<h1 class="hero-title">A website your<br /><em>customers will love.</em></h1>
+        <p class="hero-sub">We design, build, and host beautiful websites for local businesses — Get connected below for a free consultation.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get Connected</a>
+          <a href="#services" class="btn btn-ghost">See What We Do</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="browser-mockup">
+          <div class="browser-bar">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="address-bar"></span>
+          </div>
+          <div class="browser-content">
+            <div class="mock-hero-block"></div>
+            <div class="mock-grid">
+              <div class="mock-card"></div>
+              <div class="mock-card"></div>
+              <div class="mock-card"></div>
+            </div>
+            <div class="mock-text-lines">
+              <span></span><span></span><span class="short"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">What we do</span>
+        <h2 class="section-title">Everything you need,<br />nothing you don't.</h2>
+        <p class="section-sub">Every project includes design, development, and hosting, start to finish.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="10" width="40" height="28" rx="3" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M4 18h40" stroke="currentColor" stroke-width="2.5"/>
+              <circle cx="10" cy="14" r="1.5" fill="currentColor"/>
+              <circle cx="15" cy="14" r="1.5" fill="currentColor"/>
+              <circle cx="20" cy="14" r="1.5" fill="currentColor"/>
+              <rect x="10" y="24" width="12" height="8" rx="1.5" fill="currentColor" opacity=".2" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M26 24h12M26 29h8M26 34h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Web Design</h3>
+          <p>Custom, hand-crafted designs built around your brand and your customers. No templates. No cookie-cutter layouts.</p>
+          <ul class="service-features">
+            <li>Custom visual identity</li>
+            <li>Mobile-first layouts</li>
+            <li>Conversion-focused UX</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 17l-6 7 6 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M34 17l6 7-6 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M28 12l-8 24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Web Development</h3>
+          <p>Fast, reliable, and accessible websites built with modern code. We handle everything from contact forms to online stores.</p>
+          <ul class="service-features">
+            <li>Fast-loading pages</li>
+            <li>Contact &amp; booking forms</li>
+            <li>E-commerce ready</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 6C14.06 6 6 14.06 6 24s8.06 18 18 18 18-8.06 18-18S33.94 6 24 6z" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M6 24h36M24 6C19.5 10 17 17 17 24s2.5 14 7 18M24 6c4.5 4 7 11 7 18s-2.5 14-7 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Hosting &amp; Maintenance</h3>
+          <p>Worry-free hosting with automatic updates, daily backups, and real support. Your site stays online — we handle the rest.</p>
+          <ul class="service-features">
+            <li>Site security</li>
+            <li>Daily backups</li>
+            <li>Ongoing support</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">How it works</span>
+        <h2 class="section-title">Simple from start to launch.</h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <div class="step-body">
+            <h3>Consultation</h3>
+            <p>Whether you need a brand new site or want to refresh an existing one, we start with a phone call or in-person meeting — whichever you prefer — to learn about your business, your goals, and your customers.</p>
+          </div>
+        </div>
+        <div class="process-connector" aria-hidden="true"></div>
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <div class="step-body">
+            <h3>Design &amp; Approval</h3>
+            <p>We create a custom site design for your review. Refined until it feels just right.</p>
+          </div>
+        </div>
+        <div class="process-connector" aria-hidden="true"></div>
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <div class="step-body">
+            <h3>Build &amp; Test</h3>
+            <p>We develop your site, test it across all devices and browsers, and make sure everything works perfectly.</p>
+          </div>
+        </div>
+        <div class="process-connector" aria-hidden="true"></div>
+        <div class="process-step">
+          <div class="step-number">04</div>
+          <div class="step-body">
+            <h3>Launch &amp; Host</h3>
+            <p>Go live with confidence. We handle deployment and ongoing hosting so your site stays fast, secure, and online — and we're always on hand for any questions or updates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container about-inner">
+      <div class="about-visual" aria-hidden="true">
+        <div class="about-graphic">
+          <div class="ag-ring ag-ring--1"></div>
+          <div class="ag-ring ag-ring--2"></div>
+          <div class="ag-ring ag-ring--3"></div>
+          <div class="ag-center">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+              <path d="M32 8L8 20v24l24 12 24-12V20L32 8z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M32 8v36M8 20l24 12 24-12" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="about-content">
+        <span class="section-label">About us</span>
+        <h2 class="section-title">We're neighbors,<br />not a big agency.</h2>
+        <p>We are a small, Cincinnati based web studio that specializes in working with local businesses. That means you get real, fast, personal attention.</p>
+        <p>Every project is handled with care by a team member near you. At any stage of the process a member of our team is reachable and often available to meet in person if prefered.</p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Local focus</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">Fast</span>
+            <span class="stat-label">Turnaround</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">Always</span>
+            <span class="stat-label">Reachable</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-card">
+        <div class="contact-content">
+          <span class="section-label light">Get in touch</span>
+          <h2>Ready to build something great?</h2>
+          <p>Tell us about your business and we will reach out within three business days for a free consultation.</p>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" autocomplete="name" required />
+            </div>
+            <div class="form-group">
+              <label for="business">Business name</label>
+              <input type="text" id="business" name="business" placeholder="Smith's Bakery" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" autocomplete="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone (optional)</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" autocomplete="tel" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Preferred contact method</label>
+            <div class="contact-prefs">
+              <label class="pref-option">
+                <input type="radio" name="contact_pref" value="email" checked />
+                <span>Email</span>
+              </label>
+              <label class="pref-option">
+                <input type="radio" name="contact_pref" value="text" />
+                <span>Text</span>
+              </label>
+              <label class="pref-option">
+                <input type="radio" name="contact_pref" value="call" />
+                <span>Call</span>
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell us about your project</label>
+            <textarea id="message" name="message" rows="4" placeholder="What does your business do? Do you have an existing site? What are you looking to achieve?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-white btn-full">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#top" class="logo">
+          <span class="logo-mark">CS</span>
+          <span class="logo-text">CincySites</span>
+        </a>
+        <p>Beautiful websites for local businesses.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <span class="footer-heading">Services</span>
+          <ul>
+            <li><a href="#services">Web Design</a></li>
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">Hosting &amp; Maintenance</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <span class="footer-heading">Company</span>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#process">Our Process</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2026 CincySites. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
