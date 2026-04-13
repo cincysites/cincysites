@@ -2,31 +2,31 @@
    CSS Custom Properties
    =========================== */
 :root {
-  --color-bg: #f4fbf6;
-  --color-bg-2: #e7f4eb;
+  --color-bg: #fff8f2;
+  --color-bg-2: #fef0e4;
   --color-surface: #ffffff;
-  --color-surface-2: #eef8f1;
-  --color-border: rgba(15, 110, 50, 0.1);
-  --color-border-2: rgba(15, 110, 50, 0.18);
+  --color-surface-2: #fff4ec;
+  --color-border: rgba(180, 85, 35, 0.1);
+  --color-border-2: rgba(180, 85, 35, 0.18);
 
-  --color-accent: #16a34a;
-  --color-accent-dim: rgba(22, 163, 74, 0.1);
-  --color-accent-glow: rgba(22, 163, 74, 0.28);
+  --color-accent: #d4714a;
+  --color-accent-dim: rgba(212, 113, 74, 0.1);
+  --color-accent-glow: rgba(212, 113, 74, 0.22);
 
-  --color-text: #0b1f10;
-  --color-text-muted: #446652;
-  --color-text-faint: #84a08c;
+  --color-text: #2d1a0e;
+  --color-text-muted: #7a5440;
+  --color-text-faint: #b89882;
 
   --font-body: 'Inter', system-ui, sans-serif;
   --font-display: 'Sora', system-ui, sans-serif;
 
-  --radius-sm: 6px;
-  --radius-md: 12px;
-  --radius-lg: 20px;
-  --radius-xl: 28px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --radius-xl: 34px;
 
-  --shadow-card: 0 1px 3px rgba(0,60,20,.06), 0 8px 24px rgba(0,60,20,.1);
-  --shadow-glow: 0 0 60px rgba(22, 163, 74, 0.12);
+  --shadow-card: 0 2px 8px rgba(150,60,20,.05), 0 8px 32px rgba(150,60,20,.09);
+  --shadow-glow: 0 0 60px rgba(212, 113, 74, 0.1);
 
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
   --transition: 0.2s ease;
@@ -161,7 +161,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   transition: background var(--transition), border-color var(--transition), backdrop-filter var(--transition);
 }
 .site-header.scrolled {
-  background: rgba(244, 251, 246, 0.92);
+  background: rgba(255, 248, 242, 0.92);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--color-border);
 }
@@ -241,9 +241,9 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(ellipse 600px 500px at 92% 5%,  rgba(74, 222, 128, 0.18) 0%, transparent 60%),
-    radial-gradient(ellipse 500px 600px at 5%  90%,  rgba(22, 163, 74,  0.12) 0%, transparent 60%),
-    radial-gradient(ellipse 400px 300px at 50% 110%, rgba(22, 163, 74,  0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 600px 500px at 92% 5%,  rgba(240, 168, 130, 0.24) 0%, transparent 60%),
+    radial-gradient(ellipse 500px 600px at 5%  90%,  rgba(212, 113, 74,  0.16) 0%, transparent 60%),
+    radial-gradient(ellipse 400px 300px at 50% 110%, rgba(212, 113, 74,  0.1)  0%, transparent 60%),
     var(--color-bg);
 }
 
@@ -254,7 +254,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   left: -200px;
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle, rgba(22, 163, 74, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(212, 113, 74, 0.07) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
 }
@@ -277,50 +277,48 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   height: 660px;
   top: -200px;
   right: -160px;
-  border: 1.5px solid rgba(22, 163, 74, 0.13);
+  border: 1.5px solid rgba(212, 113, 74, 0.14);
 }
 .hero-deco-ring--b {
   width: 460px;
   height: 460px;
   top: -80px;
   right: -60px;
-  border: 1px solid rgba(22, 163, 74, 0.09);
+  border: 1px solid rgba(212, 113, 74, 0.09);
 }
 .hero-deco-ring--c {
   width: 260px;
   height: 260px;
   bottom: 60px;
   left: -70px;
-  border: 1px solid rgba(22, 163, 74, 0.09);
+  border: 1px solid rgba(212, 113, 74, 0.09);
 }
-/* Bottom-left pair — behind the palette card */
 .hero-deco-ring--d {
   width: 460px;
   height: 460px;
   bottom: -140px;
   left: -180px;
-  border: 1.5px solid rgba(22, 163, 74, 0.11);
+  border: 1.5px solid rgba(212, 113, 74, 0.12);
 }
-/* Bottom-right pair — behind the live card */
 .hero-deco-ring--e {
   width: 500px;
   height: 500px;
   bottom: -180px;
   right: -160px;
-  border: 1.5px solid rgba(22, 163, 74, 0.13);
+  border: 1.5px solid rgba(212, 113, 74, 0.14);
 }
 .hero-deco-ring--f {
   width: 330px;
   height: 330px;
   bottom: -80px;
   right: -80px;
-  border: 1px solid rgba(22, 163, 74, 0.09);
+  border: 1px solid rgba(212, 113, 74, 0.09);
 }
 
 .hero-deco-dots {
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(circle, rgba(22, 163, 74, 0.16) 1.5px, transparent 1.5px);
+  background-image: radial-gradient(circle, rgba(212, 113, 74, 0.15) 1.5px, transparent 1.5px);
   background-size: 30px 30px;
   mask-image: radial-gradient(ellipse 55% 70% at 80% 35%, rgba(0,0,0,0.7) 0%, transparent 100%);
   -webkit-mask-image: radial-gradient(ellipse 55% 70% at 80% 35%, rgba(0,0,0,0.7) 0%, transparent 100%);
@@ -341,7 +339,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   gap: 8px;
   padding: 6px 14px;
   background: var(--color-accent-dim);
-  border: 1px solid rgba(22, 163, 74, 0.25);
+  border: 1px solid rgba(212, 113, 74, 0.25);
   border-radius: 100px;
   font-size: 0.8rem;
   font-weight: 600;
@@ -369,7 +367,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 }
 .hero-title em {
   font-style: normal;
-  background: linear-gradient(135deg, #16a34a, #4ade80);
+  background: linear-gradient(135deg, #d4714a, #f0a878);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -430,8 +428,8 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 
 .mock-hero-block {
   height: 120px;
-  background: linear-gradient(135deg, var(--color-accent-dim), rgba(74, 222, 128, 0.06));
-  border: 1px solid rgba(22, 163, 74, 0.15);
+  background: linear-gradient(135deg, var(--color-accent-dim), rgba(240, 168, 130, 0.06));
+  border: 1px solid rgba(212, 113, 74, 0.15);
   border-radius: var(--radius-md);
   margin-bottom: 16px;
   position: relative;
@@ -442,7 +440,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   position: absolute;
   top: 20px; left: 20px;
   width: 60%; height: 12px;
-  background: rgba(22, 163, 74, 0.28);
+  background: rgba(212, 113, 74, 0.25);
   border-radius: 6px;
 }
 
@@ -500,54 +498,39 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 }
 
 @media (max-width: 1024px) {
-  /* Resize rings for tablet/mobile — keep them visible but proportioned */
   .hero-deco-ring--a {
-    width: 380px;
-    height: 380px;
-    top: -130px;
-    right: -120px;
+    width: 380px; height: 380px;
+    top: -130px; right: -120px;
   }
   .hero-deco-ring--b {
-    width: 250px;
-    height: 250px;
-    top: -50px;
-    right: -50px;
+    width: 250px; height: 250px;
+    top: -50px; right: -50px;
   }
   .hero-deco-ring--c {
-    width: 200px;
-    height: 200px;
-    bottom: 80px;
-    left: -60px;
+    width: 200px; height: 200px;
+    bottom: 80px; left: -60px;
   }
   .hero-deco-ring--d {
-    width: 320px;
-    height: 320px;
-    bottom: -110px;
-    left: -140px;
+    width: 320px; height: 320px;
+    bottom: -110px; left: -140px;
   }
   .hero-deco-ring--e {
-    width: 300px;
-    height: 300px;
-    bottom: -110px;
-    right: -110px;
+    width: 300px; height: 300px;
+    bottom: -110px; right: -110px;
   }
   .hero-deco-ring--f {
-    width: 190px;
-    height: 190px;
-    bottom: -50px;
-    right: -50px;
+    width: 190px; height: 190px;
+    bottom: -50px; right: -50px;
   }
-  /* Spread dots across center on mobile instead of right-side only */
   .hero-deco-dots {
     mask-image: radial-gradient(ellipse 90% 60% at 50% 40%, rgba(0,0,0,0.55) 0%, transparent 100%);
     -webkit-mask-image: radial-gradient(ellipse 90% 60% at 50% 40%, rgba(0,0,0,0.55) 0%, transparent 100%);
   }
-  /* Punchier gradient on mobile since there's no mockup to fill the space */
   .hero {
     background:
-      radial-gradient(ellipse 320px 280px at 100%  0%,  rgba(74, 222, 128, 0.2)  0%, transparent 60%),
-      radial-gradient(ellipse 280px 360px at 0%   100%, rgba(22, 163, 74,  0.14) 0%, transparent 60%),
-      radial-gradient(ellipse 260px 220px at 100% 100%, rgba(22, 163, 74,  0.1)  0%, transparent 60%),
+      radial-gradient(ellipse 320px 280px at 100%  0%,  rgba(240, 168, 130, 0.24) 0%, transparent 60%),
+      radial-gradient(ellipse 280px 360px at 0%   100%, rgba(212, 113, 74,  0.16) 0%, transparent 60%),
+      radial-gradient(ellipse 260px 220px at 100% 100%, rgba(212, 113, 74,  0.1)  0%, transparent 60%),
       var(--color-bg);
   }
 }
@@ -567,7 +550,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 }
 
 .service-card {
-  background: var(--color-surface);
+  background: linear-gradient(150deg, #ffffff, #fff7f2);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
   padding: 36px 32px;
@@ -584,7 +567,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   width: 52px;
   height: 52px;
   background: var(--color-accent-dim);
-  border: 1px solid rgba(22, 163, 74, 0.2);
+  border: 1px solid rgba(212, 113, 74, 0.2);
   border-radius: var(--radius-md);
   display: grid;
   place-items: center;
@@ -625,7 +608,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   width: 16px;
   height: 16px;
   flex-shrink: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='7.25' stroke='%2316a34a' stroke-width='1.5'/%3E%3Cpath d='M5 8l2 2 4-4' stroke='%2316a34a' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='7.25' stroke='%23d4714a' stroke-width='1.5'/%3E%3Cpath d='M5 8l2 2 4-4' stroke='%23d4714a' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -677,7 +660,6 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   line-height: 1.65;
 }
 
-/* Dotted line between steps */
 .process-steps::before {
   content: '';
   position: absolute;
@@ -685,7 +667,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   left: calc(12.5% + 12px);
   right: calc(12.5% + 12px);
   height: 1px;
-  border-top: 2px dashed rgba(22, 163, 74, 0.22);
+  border-top: 2px dashed rgba(212, 113, 74, 0.22);
   pointer-events: none;
 }
 
@@ -704,7 +686,6 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   align-items: center;
 }
 
-/* Graphic */
 .about-visual {
   display: flex;
   align-items: center;
@@ -720,26 +701,25 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 .ag-ring {
   position: absolute;
   border-radius: 50%;
-  border: 1.5px solid rgba(22, 163, 74, 0.16);
+  border: 1.5px solid rgba(212, 113, 74, 0.16);
 }
 .ag-ring--1 { width: 100%; height: 100%; }
-.ag-ring--2 { width: 70%; height: 70%; border-color: rgba(22, 163, 74, 0.24); }
-.ag-ring--3 { width: 42%; height: 42%; border-color: rgba(22, 163, 74, 0.38); }
+.ag-ring--2 { width: 70%; height: 70%; border-color: rgba(212, 113, 74, 0.26); }
+.ag-ring--3 { width: 42%; height: 42%; border-color: rgba(212, 113, 74, 0.4); }
 
 .ag-center {
   width: 80px;
   height: 80px;
   background: var(--color-surface);
-  border: 1px solid rgba(22, 163, 74, 0.3);
+  border: 1px solid rgba(212, 113, 74, 0.3);
   border-radius: var(--radius-lg);
   display: grid;
   place-items: center;
   color: var(--color-accent);
-  box-shadow: 0 0 30px rgba(22, 163, 74, 0.14);
+  box-shadow: 0 0 30px rgba(212, 113, 74, 0.12);
   z-index: 1;
 }
 
-/* Spin animation */
 .ag-ring--1 { animation: spin 20s linear infinite; }
 .ag-ring--2 { animation: spin 14s linear infinite reverse; }
 @keyframes spin {
@@ -785,7 +765,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
    =========================== */
 .contact {
   padding: 100px 0;
-  background: linear-gradient(160deg, #0b2e17 0%, #061a0b 100%);
+  background: linear-gradient(160deg, #3d1a08 0%, #261005 100%);
 }
 
 .contact-card {
@@ -858,8 +838,8 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 .form-group textarea::placeholder { color: rgba(255, 255, 255, 0.28); }
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: rgba(74, 222, 128, 0.6);
-  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.18);
+  border-color: rgba(212, 113, 74, 0.7);
+  box-shadow: 0 0 0 3px rgba(212, 113, 74, 0.18);
 }
 
 .contact-prefs {
@@ -895,12 +875,12 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   color: rgba(255, 255, 255, 0.85);
 }
 .pref-option input[type="radio"]:checked + span {
-  background: rgba(22, 163, 74, 0.18);
-  border-color: rgba(74, 222, 128, 0.55);
-  color: #4ade80;
+  background: rgba(212, 113, 74, 0.22);
+  border-color: rgba(240, 168, 130, 0.6);
+  color: #f0a878;
 }
 .pref-option input[type="radio"]:focus-visible + span {
-  outline: 2px solid rgba(74, 222, 128, 0.6);
+  outline: 2px solid rgba(240, 168, 130, 0.6);
   outline-offset: 2px;
 }
 
@@ -915,8 +895,8 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
    Footer
    =========================== */
 .site-footer {
-  background: #d4ecdb;
-  border-top: 1px solid rgba(15, 110, 50, 0.15);
+  background: #fde0c8;
+  border-top: 1px solid rgba(180, 85, 35, 0.15);
   padding: 60px 0 0;
 }
 
@@ -960,7 +940,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 .footer-col a:hover { color: var(--color-accent); }
 
 .footer-bottom {
-  border-top: 1px solid rgba(15, 110, 50, 0.12);
+  border-top: 1px solid rgba(180, 85, 35, 0.12);
   padding: 20px 24px;
   font-size: 0.8rem;
   color: var(--color-text-faint);
@@ -1014,7 +994,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
     top: 68px;
     left: 0;
     right: 0;
-    background: rgba(244, 251, 246, 0.97);
+    background: rgba(255, 248, 242, 0.97);
     backdrop-filter: blur(16px);
     flex-direction: column;
     padding: 16px;
