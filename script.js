@@ -99,21 +99,35 @@ form.addEventListener('submit', (e) => {
 
   if (!valid) return;
 
-  // Simulate sending
   btn.textContent = 'Sending…';
   btn.disabled = true;
 
-  setTimeout(() => {
-    btn.textContent = 'Message Sent!';
-    btn.style.background = 'var(--color-accent)';
-    form.reset();
+  const data = new FormData(form);
 
-    setTimeout(() => {
-      btn.textContent = 'Send Message';
+  fetch('https://formspree.io/f/xaqaybby', {
+    method: 'POST',
+    body: data,
+    headers: { 'Accept': 'application/json' }
+  })
+  .then(res => {
+    if (res.ok) {
+      btn.textContent = 'Message Sent!';
+      btn.style.background = 'var(--color-accent)';
+      form.reset();
+      setTimeout(() => {
+        btn.textContent = 'Send Message';
+        btn.disabled = false;
+        btn.style.background = '';
+      }, 3500);
+    } else {
+      btn.textContent = 'Something went wrong — try again';
       btn.disabled = false;
-      btn.style.background = '';
-    }, 3500);
-  }, 1000);
+    }
+  })
+  .catch(() => {
+    btn.textContent = 'Something went wrong — try again';
+    btn.disabled = false;
+  });
 });
 
 /* Clear error styles on input */
