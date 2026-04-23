@@ -104,7 +104,7 @@ form.addEventListener('submit', (e) => {
 
   const data = new FormData(form);
 
-  fetch('https://formspree.io/f/xaqaybby', {
+  fetch('https://formspree.io/f/xbdqqpzv', {
     method: 'POST',
     body: data,
     headers: { 'Accept': 'application/json' }
