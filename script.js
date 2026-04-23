@@ -103,8 +103,9 @@ form.addEventListener('submit', (e) => {
   btn.disabled = true;
 
   const data = new FormData(form);
+  data.append('access_key', '6fdc230f-ab4c-4f0a-9d04-ff7baafe849e');
 
-  fetch('https://formspree.io/f/xbdqqpzv', {
+  fetch('https://api.web3forms.com/submit', {
     method: 'POST',
     body: data,
     headers: { 'Accept': 'application/json' }
